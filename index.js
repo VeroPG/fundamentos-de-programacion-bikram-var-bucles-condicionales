@@ -36,7 +36,7 @@ for (let i = 0; i < 11; i++) {
 
 let sumaPares = 0;
 for (let i = 0; i < 10; i++) {
-  if (i % 2 == 0) {
+  if (i % 2 === 0) {
     sumaPares += i;
   }
 }
@@ -44,25 +44,41 @@ for (let i = 0; i < 10; i++) {
 // ----  Proyecto Individual
 
 //Variables
+let variableValorNumerico = 9;
+const MiNombre = "Vero";
+const MiNumeroFav = 8;
 
 //Booleanos
+let booleanoOr = booleano1 || booleano2;
+let booleanoMix1 =
+  (booleano1 && TAU / 2 === PI) ||
+  variableValorNumerico >= MiNumeroFaviNumeroFav;
+let seisNoEsNueve = 6 !== 9;
+let booleanoMix2 = variableValorNumerico > 0 || -(MiNumeroFav * TAU);
 
 //Operadores
+let valorSuma = MiNumeroFav + variableValorNumerico;
+let valorResta = MiNumeroFav - variableValorNumerico;
+let valorMultiplicacion = MiNumeroFav * variableValorNumerico;
+let valorDivision = MiNumeroFav / 3;
 
 //Bucles
 
-/*
-var sumaPares = 0;
-for (let i = 0; i < 10; i++) {
-    if (i % 2 == 0) {
-      sumaPares += i;
-    }
+let contarHasta10 = 0;
+while (contarHasta10 < 10) {
+  contarHasta10++;
 }
 
-//26
-var sumaImpares = 0;
-  for (let i = 0; i < 10; i++) {
-      if (i % 2 == 1) {
-          sumaImpares += i;
-      }
-  }*/
+let preI = 0;
+let preJ = 0;
+
+for (let i = 0; i <= 10; i++) {
+  preI += ++preJ;
+}
+
+let sumaImpares = 0;
+for (let i = 0; i < 10; i++) {
+  if (i % 2 !== 0) {
+    sumaImpares += i;
+  }
+}
